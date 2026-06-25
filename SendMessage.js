@@ -49,8 +49,8 @@ window.addEventListener('resize',()=>{
 
 const button_send = document.querySelector('.send');
 
-button_send.addEventListener('click',(e) => {
-    e.preventDefault();
+button_send.addEventListener('click',() => {
+    
     const input_name = document.querySelector('.input_name').value;
     const text = document.querySelector('.message').value;
     let texto_completo = encodeURIComponent(`Hola soy ${input_name}. Quiero decirte que : ${text}`);
@@ -59,7 +59,7 @@ button_send.addEventListener('click',(e) => {
         alert('Please fill out all the fields');
 
     }else if(input_name.trim() !== '' && text.trim() !== ''){
-        let web_URl = `http:// wa.me/5356545159?text=${texto_completo}`;
+        let web_URl = `http://wa.me/5356545159?text=${texto_completo}`;
 
         window.open(web_URl);
     }
