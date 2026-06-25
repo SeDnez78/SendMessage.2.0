@@ -59,7 +59,7 @@ button_send.addEventListener('click',(e) => {
         alert('Please fill out all the fields');
 
     }else if(input_name.trim() !== '' && text.trim() !== ''){
-        let web_URl = `http:// wwa.me/5356545159?text=${texto_completo}`;
+        let web_URl = `http:// wa.me/5356545159?text=${texto_completo}`;
 
         window.open(web_URl);
     }
